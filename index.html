@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bus to Call - Öğrenci Dostu Otobüs</title>
+    <title>Bus to Call - Student Friendly Bus</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <style>
-        /* --- GENEL AYARLAR --- */
         * {
             margin: 0;
             padding: 0;
@@ -22,11 +21,11 @@
             background-color: #f9f9f9;
         }
 
-        /* Renk Paleti (Uygulama ile uyumlu) */
+        /* Color Palette */
         :root {
-            --primary-color: #009688; /* Teal */
+            --primary-color: #009688;
             --primary-dark: #00796B;
-            --accent-color: #FF9800; /* Turuncu */
+            --accent-color: #FF9800;
             --text-dark: #212121;
             --text-light: #757575;
             --white: #ffffff;
@@ -34,8 +33,7 @@
 
         a { text-decoration: none; }
         ul { list-style: none; }
-
-        /* --- HEADER / NAVBAR --- */
+		
         header {
             background: var(--white);
             padding: 1rem 5%;
@@ -76,9 +74,9 @@
 
         .btn-download-nav:hover { background-color: #F57C00; }
 
-        /* --- HERO SECTION (GİRİŞ) --- */
+       
         .hero {
-            padding: 120px 5% 50px; /* Navbar payı için üstten boşluk */
+            padding: 120px 5% 50px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -141,7 +139,7 @@
             position: relative;
         }
 
-        /* Telefon Çerçevesi Mockup (CSS ile Basit Çizim) */
+       
         .phone-mockup {
             width: 300px;
             height: 600px;
@@ -159,15 +157,15 @@
             border-radius: 32px;
             overflow: hidden;
             background-image: url('ekrangoruntusu.png'); 
-            /* Buraya kendi screenshotunu koyacaksın */
+            
             background-size: cover;
             position: relative;
-			background-size: 100% 100%; 
-			background-position: center;
-			background-repeat: no-repeat;
+            background-size: 100% 100%; 
+            background-position: center;
+            background-repeat: no-repeat;
         }
 
-        /* Çentik */
+        
         .phone-mockup::before {
             content: '';
             position: absolute;
@@ -182,7 +180,7 @@
             z-index: 2;
         }
 
-        /* --- ÖZELLİKLER (FEATURES) --- */
+        
         .features {
             padding: 80px 5%;
             background-color: var(--white);
@@ -230,7 +228,7 @@
         .feature-card h3 { margin-bottom: 10px; }
         .feature-card p { color: var(--text-light); font-size: 0.9rem; }
 
-        /* --- FOOTER --- */
+        
         footer {
             background-color: var(--text-dark);
             color: var(--white);
@@ -262,7 +260,7 @@
             padding-top: 20px;
         }
 
-        /* --- MOBİL UYUMLULUK --- */
+        
         @media (max-width: 768px) {
             .hero {
                 flex-direction: column;
@@ -276,7 +274,7 @@
                 justify-content: center;
             }
 
-            .nav-links { display: none; } /* Mobilde menüyü basitleştirdik */
+            .nav-links { display: none; }
             
             .phone-mockup {
                 width: 260px;
@@ -292,22 +290,22 @@
             <i class="fas fa-bus"></i> Bus to Call
         </div>
         <nav class="nav-links">
-            <a href="#ozellikler">Özellikler</a>
-            <a href="https://github.com/baris-droid/bustocall/releases/download/v1.0/bustocall.apk" class="btn-download-nav">İndir</a>
+            <a href="#features">Features</a>
+            <a href="https://github.com/baris-droid/bustocall/releases/download/v1.0/bustocall.apk" class="btn-download-nav">Download</a>
         </nav>
     </header>
 
     <section class="hero">
         <div class="hero-text">
-            <h1>Otobüs Beklerken <br><span>Yalnız Değilsin!</span></h1>
-            <p>Duraklardaki yoğunluğu anlık görün, sanal kuyruğa girin ve otobüsün ne zaman kalkacağını herkesten önce öğrenin.</p>
+            <h1>You Are Not Alone <br><span>Waiting for the Bus!</span></h1>
+            <p>See how busy the stops are instantly, join the virtual queue, and find out when the bus leaves before anyone else.</p>
             
             <div class="cta-buttons">
                 <a href="https://github.com/baris-droid/bustocall/releases/download/v1.0/bustocall.apk" class="btn btn-google">
-                    <i class="fab fa-google-play"></i> APK İndir
+                    <i class="fab fa-google-play"></i> Download APK
                 </a>
                 <a href="#" class="btn btn-apple">
-                    <i class="fab fa-apple"></i> App Store (Daha Çıkmadı)
+                    <i class="fab fa-apple"></i> App Store (Coming Soon)
                 </a>
             </div>
         </div>
@@ -320,40 +318,40 @@
         </div>
     </section>
 
-    <section id="ozellikler" class="features">
-        <h2>Neden Bus to Call?</h2>
+    <section id="features" class="features">
+        <h2>Why Bus to Call?</h2>
         
         <div class="feature-grid">
             <div class="feature-card">
                 <div class="icon-box">
                     <i class="fas fa-map-marked-alt"></i>
                 </div>
-                <h3>Konum Bazlı Algılama</h3>
-                <p>GPS teknolojisi ile size en yakın durakları otomatik tespit eder ve haritada gösterir.</p>
+                <h3>Location Detection</h3>
+                <p>It automatically detects the stops closest to you with GPS technology and shows them on the map.</p>
             </div>
 
             <div class="feature-card">
                 <div class="icon-box">
                     <i class="fas fa-users"></i>
                 </div>
-                <h3>Sanal Kuyruk</h3>
-                <p>Durağa gitmeden sıraya girin, kaç kişinin beklediğini görün ve topluluk gücüyle hareket edin.</p>
+                <h3>Virtual Queue</h3>
+                <p>Join the line without going to the stop, see how many people are waiting, and move with the power of the community.</p>
             </div>
 
             <div class="feature-card">
                 <div class="icon-box">
                     <i class="fas fa-moon"></i>
                 </div>
-                <h3>Karanlık Mod</h3>
-                <p>Gece yolculuklarında gözlerinizi yormayan şık karanlık tema desteği.</p>
+                <h3>Dark Mode</h3>
+                <p>Stylish dark theme support that doesn't tire your eyes during night trips.</p>
             </div>
 
             <div class="feature-card">
                 <div class="icon-box">
                     <i class="fas fa-bell"></i>
                 </div>
-                <h3>Anlık Bildirimler</h3>
-                <p>Otobüs dolduğunda veya hareket ettiğinde anında haberdar olun.</p>
+                <h3>Instant Notifications</h3>
+                <p>Get informed instantly when the bus is full or when it moves.</p>
             </div>
         </div>
     </section>
@@ -370,10 +368,9 @@
             </div>
         </div>
         <div class="copyright">
-            &copy; 2025 BustoCall App. Tüm hakları saklıdır.
+            &copy; 2025 BustoCall App. All rights reserved.
         </div>
     </footer>
 
 </body>
-
 </html>
